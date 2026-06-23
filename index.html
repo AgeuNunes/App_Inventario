@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inventário</title>
+  <link rel="shortcut icon" href="./icon.png" type="image/png">
 
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="style.css">
@@ -24,7 +25,7 @@
     <label>Quantidade:</label>
     <input type="number" id="inputQtd" placeholder="Digite a quantidade">
 
-    <button id="botao" onclick="registrar()">✅ Registrar</button>
+    <button class="btn" onclick="registrar()">✅ Registrar</button>
     
     <table>
       <thead>
@@ -38,7 +39,7 @@
       <tbody id="tabela"></tbody>
     </table>
     
-    <button id="botao" onclick="exportarExcel()">📥 Baixar planilha</button>
+    <button class="btn" onclick="exportarExcel()">📥 Baixar planilha</button>
 
   </div>
 

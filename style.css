@@ -20,33 +20,38 @@ input {
 }
 
 button {
-  padding: 10px;
   margin: 10px;
   font-size: 16px;
   cursor: pointer;
   border: none;
+  background: none;
 }
 
-#botao{
+.btn{
+  padding: 10px;
   background: #1FB7FF;
   color: #fff;
   border-radius: 10px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  width: 100%;
+  margin: 20px 0px;
+  font-size: 14px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+th, td{
+  padding: 5px 10px;
+  background: #fff;
 }
 
 th {
   padding: 10px;
   background: #3F5FA6;
   color: #fff;
-}
-
-table {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-collapse: separate;
-  border-spacing: 0;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid #ccc;
 }
