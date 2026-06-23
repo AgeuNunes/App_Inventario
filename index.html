@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventário</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+
+<body>
+
+  <h2>📦 Inventário de Spare Parts</h2>
+
+  <div class="container">
+
+    <label>Código:</label>
+    <input type="text" id="inputQR" placeholder="Escaneie o QR Code" autofocus>
+
+    <label>Quantidade:</label>
+    <input type="number" id="inputQtd" placeholder="Digite a quantidade">
+
+    <button id="botao" onclick="registrar()">🗸 Registrar</button>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Descrição</th>
+          <th>Quantidade</th>
+          <th>Excluir</th>
+        </tr>
+      </thead>
+      <tbody id="tabela"></tbody>
+    </table>
+    
+    <button id="botao" onclick="exportarExcel()">⭳ Baixar planilha</button>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
