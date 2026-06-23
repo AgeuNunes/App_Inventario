@@ -5,9 +5,21 @@ body {
   text-align: center;
 }
 
+img{
+  width: 40%;
+}
+
 .container {
   width: 95%;
   margin: auto;
+}
+
+.containerLabel {
+  text-align: left;
+}
+
+.containerButton {
+  text-align: right;
 }
 
 input {
@@ -28,8 +40,8 @@ button {
 }
 
 .btn{
-  padding: 10px;
-  background: #1FB7FF;
+  padding: 10px 20px;
+  background: #2DABD5;
   color: #fff;
   border-radius: 10px;
 }
@@ -40,7 +52,7 @@ table {
   font-size: 14px;
   border-collapse: separate;
   border-spacing: 0;
-  border-radius: 12px;
+  border-radius: 10px;
   overflow: hidden;
   border: 1px solid #ccc;
 }

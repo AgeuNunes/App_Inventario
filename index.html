@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inventário</title>
@@ -11,23 +12,35 @@
   <link rel="stylesheet" href="style.css">
 
   <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
 </head>
 
 <body>
 
-  <h2>📦 Inventário de Spare Parts</h2>
+  <img src="logo.png" alt="logo">
+
+  <h2>📦 Inventário</h2>
 
   <div class="container">
 
-    <label>Código:</label>
+    <div class="containerLabel">
+      <label>Item:</label>
+    </div>
+
     <input type="text" id="inputQR" placeholder="Escaneie o QR Code" autofocus>
 
-    <label>Quantidade:</label>
+    <div class="containerLabel">
+      <label>Quantidade:</label>
+    </div>
+
     <input type="number" id="inputQtd" placeholder="Digite a quantidade">
 
-    <button class="btn" onclick="registrar()">✅ Registrar</button>
-    
+    <div class="containerButton">
+      <button class="btn" onclick="registrar()">Salvar ✅</button>
+    </div>
+
     <table>
+
       <thead>
         <tr>
           <th>Código</th>
@@ -36,10 +49,14 @@
           <th>Excluir</th>
         </tr>
       </thead>
+
       <tbody id="tabela"></tbody>
+
     </table>
-    
-    <button class="btn" onclick="exportarExcel()">📥 Baixar planilha</button>
+
+    <div class="containerButton">
+      <button class="btn" onclick="exportarExcel()">Baixar a lista 📥</button>
+    </div>
 
   </div>
 
